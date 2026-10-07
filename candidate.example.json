@@ -1,0 +1,13 @@
+{
+  "name": "feature-domain-operation",
+  "scores": {
+    "decisions_removed": 5,
+    "bad_paths_eliminated": 5,
+    "simplicity": 4,
+    "discoverability": 5,
+    "enforcement_strength": 4,
+    "verification_quality": 4,
+    "migration_safety": 4,
+    "escape_hatch_quality": 4
+  }
+}
