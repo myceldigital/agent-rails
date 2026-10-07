@@ -1,0 +1,3 @@
+interface:
+  display_name: "Agent Rails"
+  short_description: "Compile coding-agent mistakes into repository constraints"
