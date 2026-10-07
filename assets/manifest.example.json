@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "rails": [
+    {
+      "id": "features-no-raw-db",
+      "scope": ["src/features/**"],
+      "invariant": "Feature modules must not import the raw database client.",
+      "approved_path": "Use domain operations from src/domain/.",
+      "forbidden_paths": ["src/db/client"],
+      "enforcement": {
+        "kind": "import-boundary",
+        "command": "pnpm check:architecture"
+      },
+      "verification": {
+        "positive": "pnpm check:architecture",
+        "adversarial": "A fixture importing src/db/client from src/features must fail."
+      },
+      "escape_hatch": "No general escape hatch. Migration tooling lives outside src/features."
+    }
+  ]
+}
